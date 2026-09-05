@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --theme-bg: #111318;
+  --theme-bg-secondary: #181b22;
+  --theme-bg-tertiary: #212631;
+  --theme-card-bg: #181b22;
+  --theme-card-subtle: #212631;
+  --theme-text-primary: #f4f4f5;
+  --theme-text-secondary: #a1a1aa;
+  --theme-text-muted: #52525b;
+  --theme-accent: #fbbf24;
+  --theme-accent-bg: #fbbf24;
+  --theme-accent-text: #09090b;
+  --theme-correct: #f4f4f5;
+  --theme-incorrect: #f87171;
+  --theme-caret: #fbbf24;
+  --theme-border: #27272a;
+  --theme-border-subtle: rgba(39, 39, 42, 0.6);
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, kbd, pre, .font-mono {
+    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+  }
+}
+
+/* Hard Drop Shadows matching Professional Polish theme */
+.shadow-brutal-sm {
+  box-shadow: 2px 2px 0px 0px rgba(20, 20, 20, 1);
+}
+.shadow-brutal {
+  box-shadow: 4px 4px 0px 0px rgba(20, 20, 20, 1);
+}
+.shadow-brutal-subtle {
+  box-shadow: 6px 6px 0px 0px rgba(20, 20, 20, 0.1);
+}
+.shadow-brutal-lg {
+  box-shadow: 8px 8px 0px 0px rgba(20, 20, 20, 0.12);
+}
+
+/* Custom scrollbar reset */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}

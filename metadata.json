@@ -1,0 +1,6 @@
+{
+  "name": "TypeSprint - Speed & Accuracy Typing Trainer",
+  "description": "A high-performance typing practice and speed trainer tracking real-time WPM, accuracy, weak key analytics, and progress over time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
